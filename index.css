@@ -26,6 +26,23 @@ a {
     text-decoration: none;
 }
 
+/** Animations **/
+
+@keyframes focus {
+    from {
+        filter: brightness(100%);
+    } to {
+        font-size: 1.25rem;
+        filter: brightness(110%);
+    }
+}
+
+nav a:hover {
+    animation-name: focus;
+    animation-duration: 1s;
+    
+}
+
 /** General Styles **/
 
 html {
